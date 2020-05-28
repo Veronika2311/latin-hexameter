@@ -1,0 +1,49 @@
+---
+title: "Chi-square"
+output: html_notebook
+---
+
+
+
+```{r}
+bucolics_data <- read.csv("bucolics.csv")
+print(bucolics_data)
+```
+```{r}
+#str(bucolics_data)
+#bucolics_data = table(bucolics_data)
+#print(bucolics_data)
+print(chisq.test(bucolics_data))
+```
+
+```{r}
+vergil_data <- read.csv("vergil.csv")
+print(vergil_data)
+```
+```{r}
+print(chisq.test(vergil_data))
+```
+```{r}
+geoaen_data <- read.csv("geoaen.csv")
+print(geoaen_data)
+```
+```{r}
+print(chisq.test(geoaen_data))
+```
+
+```{r}
+feet_data <- read.csv("feet.csv")
+print(feet_data)
+```
+```{r}
+print(chisq.test(feet_data))
+```
+
+```{r}
+autors_data <- read.csv("autors.csv")
+print(autors_data)
+```
+```{r}
+print(chisq.test(autors_data))
+```
+
